@@ -1,0 +1,265 @@
+.template4_v1 {
+    height: 100%;
+}
+
+.template4_v1 .itemContainer {
+    margin-top: -9px;
+}
+
+.template4_v1 .questionContainer {
+    text-align: center;
+}
+
+.template4_v1 .optionContainer {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 40px;
+    display: flex;
+}
+
+.disabled {
+    cursor: default !important;
+    pointer-events: none;
+}
+
+
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 10px;
+    }
+}
+
+.template4_v1 .optionContainer .optClick {
+    display: inline-block;
+    width: 188px;
+    height: 115px;
+    border: 2px solid yellow;
+}
+
+.template4_v1 .optionContainer .optClick.filled {
+    cursor: default;
+}
+
+.template4_v1 .questionContainer .question {
+    border: 2px solid #ffffff;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 33px;
+}
+
+.option .optClick .showAnswerTickMark img {
+    width: 51px;
+    position: absolute;
+    top: -49px !important;
+    left: 33px;
+}
+
+.option .optClick .showAnswerCrossMark img {
+    width: 51px;
+    position: absolute;
+    top: -49px !important;
+    left: 33px;
+    display: none;
+}
+
+.question div {
+    font-size: 35px;
+}
+
+.template4_v1 .showAnswerTickMark,
+.template4_v1 .showAnswerCrossMark {
+    position: absolute;
+    top: -100px;
+    left: 140px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.template4_v1 .showAnswerCrossMark {
+    animation-name: crossBlinker;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+@keyframes crossBlinker {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.template4_v1 .showAnswerTickMark {
+    position: relative;
+    top: -82px !important;
+    left: 128px !important;
+    margin: -74px 0px;
+    display: none;
+}
+
+.template4_v1 .showAnswerCrossMark {
+    position: relative;
+    top: -155px !important;
+    left: 135px !important;
+}
+
+.question_1 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.question_2 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.question_3 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.question_4 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.question_5 {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#Heat,
+#noHeat {
+    width: 580px !important;
+    height: 240px !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+#contOrig {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+th {
+    text-align: center;
+    background-color: #8EB2C9;
+}
+
+td {
+    text-align: center;
+    padding: 0 !important;
+    width: 50%;
+}
+
+table,
+th,
+td {
+    border: 2px solid #0E83A7 !important;
+}
+
+
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #0E83A7 !important;
+}
+
+.template4_v1 .optionContainer .newWidth {
+    width: 275px;
+}
+
+.Title-Number {
+    color: #d12053;
+}
+
+#droppable {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    width: 125px;
+    height: 125px;
+    background: #999;
+    color: #fff;
+    padding: 10px;
+}
+
+.selected {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.3 !important;
+}
+
+.heat,
+.noheat {
+    transition: background-color 0.3s;
+    height: 250px;
+}
+
+.drop-active {
+    border-color: #aaa;
+}
+
+.drop-target {
+    background-color: #29e;
+}
+
+.drag-drop {
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    margin: 1rem 2rem;
+    touch-action: none;
+    transform: translate(0px, 0px);
+}
+
+.drag-drop.can-drop {
+    color: #000;
+    background-color: #4e4;
+}
+.caption {
+    color: black;
+    font-size: 38px;
+}
+
+table {
+    width: 99% !important;
+    position: absolute;
+    left: 7px;
+    z-index: -1;
+    top: 382px;
+}
+
+#inner-dropzone1, #inner-dropzone2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}

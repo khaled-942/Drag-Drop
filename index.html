@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Educational RC</title>
+
+    <!-- global CSS Starts -->
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/template/p15_ex11.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- global CSS End -->
+
+    <!-- global JS Starts -->
+    <script src="js/lib/jquery_v3.3.1.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/interact.min.js"></script>
+    <script src="js/lib/underscore-min.js"></script>
+    <!-- global JS End -->
+
+
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="page_content">
+
+            <div class="container-fluid noPadding">
+                <!-- header start -->
+                <div class="col-xs-12 noPadding header">
+                    <div class="box1 title" data-audioSrc="assets/audio/p15e11.mp3" onClick="fnTitleAudioClick(this)">
+                        <img src="assets/images/audio_icon.png" class="img-responsive" />
+                    </div>
+                    <div class="boxhead5 headingTitle">
+                        <h1>Look at the pictures. Place them in the right part of the table.</h1>
+                    </div>
+
+                    <div class="box1 hide">
+                        <div class="resourseBtn hide">
+                            <img src="assets/images/resourse_icon.png" class="img-responsive" />
+                        </div>
+                    </div>
+
+                    <div class="box1 pull-right helpBtn hide">
+                        <img src="assets/images/help_icon.png" class="img-responsive" />
+                    </div>
+                </div>
+                <audio id="audioPlayer1" preload="auto" src=""></audio>
+                <audio id="audioPlayer2" preload="auto" src=""></audio>
+                <!-- header end -->
+
+                <!-- page start -->
+                <section class="col-xs-12 pageContainer">
+                    <div class="pageBg col-xs-12"></div>
+                    <div class="pageContent col-xs-12">
+                        <div id="myCarousel" class="carousel slide template4_v1" data-ride="carousel" data-interval="0" data-wrap="false" data-id="template4_v1">
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active" style="height: 100%;" data-audioSrc="">
+                                    <div class="itemContainer" id="itemContainer_1" style="height: 100%;">
+
+
+                                        <div id="yes-drop1" class="drag-drop">
+                                            <img src="assets/images/p15e11/4lamp.png" class="imgNoHeat" type='noheat' data-audioSrc="assets/audio/lamp.mp3">
+                                            <div class="caption">lamp</div>
+                                        </div>
+                                        <div id="yes-drop2" class="drag-drop">
+                                            <img src="assets/images/p15e11/1fire.png" class="imgHeat" type='heat' data-audioSrc="assets/audio/fire.mp3">
+                                            <div class="caption">fire</div>
+                                        </div>
+                                        <div id="yes-drop3" class="drag-drop">
+                                            <img src="assets/images/p15e11/5tooth.png" class="imgNoHeat" type='noheat' data-audioSrc="assets/audio/toothbrush.mp3">
+                                            <div class="caption">toothbrush</div>
+                                        </div>
+                                        <div id="yes-drop4" class="drag-drop">
+                                            <img src="assets/images/p15e11/2oven.png" class="imgHeat" type='heat' data-audioSrc="assets/audio/oven.mp3">
+                                            <div class="caption">oven</div>
+                                        </div>
+                                        <div id="yes-drop5" class="drag-drop">
+                                            <img src="assets/images/p15e11/3micro.png" class="imgHeat" type='heat' data-audioSrc="assets/audio/microwave.mp3">
+                                            <div class="caption">microwave</div>
+                                        </div>
+                                        <br>
+                                        <div id="yes-drop6" class="drag-drop">
+                                            <img src="assets/images/p15e11/6sun.png" class="imgHeat" type='heat' data-audioSrc="assets/audio/sun.mp3">
+                                            <div class="caption">sun</div>
+                                        </div>
+                                        <div id="yes-drop7" class="drag-drop">
+                                            <img src="assets/images/p15e11/7shirt.png" class="imgNoHeat" type='noheat' data-audioSrc="assets/audio/t-shirt.mp3">
+                                            <div class="caption">t-shirt</div>
+                                        </div>
+                                        <div id="yes-drop8" class="drag-drop">
+                                            <img src="assets/images/p15e11/8heater.png" class="imgHeat" type='heat' data-audioSrc="assets/audio/heater.mp3">
+                                            <div class="caption">heater</div>
+                                        </div>
+                                        <div id="yes-drop9" class="drag-drop">
+                                            <img src="assets/images/p15e11/9tv.png" class="imgNoHeat" type='noheat' data-audioSrc="assets/audio/tv.mp3">
+                                            <div class="caption">television</div>
+                                        </div>
+                                        <div id="yes-drop10" class="drag-drop">
+                                            <img src="assets/images/p15e11/10cup.png" class="imgNoHeat" type='noheat' data-audioSrc="assets/audio/cup.mp3">
+                                            <div class="caption">cup</div>
+                                        </div>
+
+
+                                        <div style="display: inline;" class="optionContainer">
+                                            <table class="table table-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="Quicksand-Bold" data-audioSrc="assets/audio/p52_voice 12.mp3" onClick="fnTitleAudioClick(this)">Heat sources</th>
+                                                        <th class="Quicksand-Bold" data-audioSrc="assets/audio/p52_voice 13.mp3" onClick="fnTitleAudioClick(this)">Not heat sources</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td id="outer-dropzone1" class="heat">
+                                                            <div id="inner-dropzone1" class="heat">
+
+                                                            </div>
+                                                        </td>
+                                                        <td id="outer-dropzone2" class="noheat">
+                                                            <div id="inner-dropzone2" class="noheat">
+
+                                                            </div>
+                                                        </td>
+                                                </tbody>
+                                            </table>
+
+                                            <div class="correctAnsAudio" data-audioSrc="assets/audio/correct.mp3"></div>
+                                            <div class="incorrectAnsAudio" data-audioSrc="assets/audio/incorrect.mp3"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- page end -->
+
+                <!-- footer start -->
+                <div class="row">
+                    <div class="col-xs-12 footer">
+                        <div class="box1" title="Restart" id="restart">
+                            <div class="reloadBtnAll">
+                                <img src="assets/images/replay_icon.png" class="img-responsive" />
+                            </div>
+                        </div>
+
+                        <div style="visibility: hidden;" class="box3">
+                            <div class="audioPlayerContainer" id="audioDragContainer">
+                                <div class="col-xs-12 controlsDiv">
+                                    <div class="controlsinline">
+                                        <div id="pButton" class="col-xs-1 noPadding">
+                                            <img src="assets/images/play.png" class="img-responsive playImg" onClick="fnStartAudio('play');" />
+                                            <img src="assets/images/pause.png" class="img-responsive pauseImg" onClick="fnStartAudio('pause');" />
+                                        </div>
+                                        <div class="col-xs-11" id="audioDrag">
+                                            <div class="slidecontainer">
+                                                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" step="0.1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box1">
+
+                            <div class="reloadBtnScreen">
+                                <img src="assets/images/reload_icon.png" class="img-responsive" />
+                            </div>
+                        </div>
+
+                        <div class="box2">
+                            <div class="showAnsBtn">
+                                <img src="assets/images/showAns_icon.png" class="img-responsive" />
+                            </div>
+                        </div>
+
+                        <div class="box1">
+                            <div class="backBtn">
+                                <img src="assets/images/back_icon.png" class="img-responsive" />
+                            </div>
+                        </div>
+
+                        <div class="box4">
+                            <div class="pageNumber">1 of 2</div>
+                        </div>
+
+                        <div class="box1">
+                            <div class="nextBtn">
+                                <img src="assets/images/next_icon.png" class="img-responsive inlineblock" />
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- footer end -->
+
+
+                <div class="resoursePopup" style="display: none;">
+                    <div class="resourseContainer">
+                        <img class="closeBtn" src="assets/images/close_icon.png">
+                        <div class="col-xs-12 noPadding" style="overflow: auto;width:100%;height:100%;padding:0;">
+                            <img src="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="helpPopup" style="display: none;">
+                    <div class="helpContainer">
+                        <img class="closeBtn" src="assets/images/close_icon.png">
+                        <div class="col-xs-12" style="overflow: auto;width:100%;height:100%;font-size:30px;">
+                            <p>Help content goes here.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function() {
+            fnSetPlayer();
+            fnTemplate4_v1($('div.active'));
+        });
+    </script>
+
+    <script type="text/javascript" src="js/template/p15_ex11.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
